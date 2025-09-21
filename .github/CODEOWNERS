@@ -1,0 +1,33 @@
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# they will be requested for review when someone opens a pull request.
+
+* @TU_USUARIO_GITHUB
+
+# Specific file patterns
+*.md @TU_USUARIO_GITHUB
+.github/ @TU_USUARIO_GITHUB
+
+# Frontend components
+app/ @TU_USUARIO_GITHUB
+components/ @TU_USUARIO_GITHUB
+lib/ @TU_USUARIO_GITHUB
+
+# Configuration files
+package.json @TU_USUARIO_GITHUB
+tsconfig.json @TU_USUARIO_GITHUB
+tailwind.config.js @TU_USUARIO_GITHUB
+next.config.js @TU_USUARIO_GITHUB
+
+# Documentation
+README.md @TU_USUARIO_GITHUB
+*.md @TU_USUARIO_GITHUB
+
+# Database
+database_schema.sql @TU_USUARIO_GITHUB
+database/ @TU_USUARIO_GITHUB
+
+# Environment and security
+.env.example @TU_USUARIO_GITHUB
+.gitignore @TU_USUARIO_GITHUB
+

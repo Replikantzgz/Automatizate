@@ -1,0 +1,21 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🆘 Necesito Ayuda
+    url: https://github.com/TU_USUARIO_GITHUB/Automatizate/discussions
+    about: 💬 Preguntas generales, dudas o ayuda con la configuración
+  - name: 🐛 Reportar Bug
+    url: https://github.com/TU_USUARIO_GITHUB/Automatizate/issues/new?template=bug_report.md
+    about: 🚨 Reportar un bug o problema en la aplicación
+  - name: 🚀 Solicitar Funcionalidad
+    url: https://github.com/TU_USUARIO_GITHUB/Automatizate/issues/new?template=feature_request.md
+    about: 💡 Sugerir una nueva funcionalidad o mejora
+  - name: 📚 Documentación
+    url: https://github.com/TU_USUARIO_GITHUB/Automatizate/wiki
+    about: 📖 Guías, tutoriales y documentación del proyecto
+  - name: 💬 Discord
+    url: https://discord.gg/automarket
+    about: 🎮 Únete a nuestra comunidad en Discord
+  - name: 📧 Email de Soporte
+    url: mailto:soporte@automarket.com
+    about: 📧 Contacto directo para soporte técnico
+
