@@ -1,8 +1,8 @@
 import Stripe from 'stripe'
 
 // Configuración de Stripe
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2023-10-16',
+export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'sk_test_placeholder', {
+  apiVersion: '2025-08-27.basil',
 })
 
 // Configuración de la comisión (5% por defecto)

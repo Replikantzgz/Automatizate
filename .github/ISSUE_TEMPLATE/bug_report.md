@@ -62,3 +62,5 @@ Error: [mensaje de error]
 
 **¡Gracias por reportar este bug! 🐛✨**
 
+
+

@@ -141,7 +141,7 @@ export default function PrivacyPage() {
             <ul className="list-disc pl-6 text-gray-700 mb-6">
               <li>Contactarnos en privacy@automarket.com</li>
               <li>Usar nuestro formulario de solicitud en la configuración de tu cuenta</li>
-              <li>Llamarnos al [número de teléfono]
+              <li>Llamarnos al [número de teléfono]</li>
             </ul>
 
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. Cookies y Tecnologías Similares</h2>
@@ -204,4 +204,6 @@ export default function PrivacyPage() {
     </div>
   )
 }
+
+
 

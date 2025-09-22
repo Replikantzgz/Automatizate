@@ -244,3 +244,5 @@ Cualquier código de 3 dígitos
 - **Documentación oficial** de Stripe Connect
 - **Comunidad** de desarrolladores de Stripe
 
+
+

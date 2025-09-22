@@ -327,3 +327,5 @@ El Panel de Administración de AutoMarket proporciona una solución completa y p
 
 La implementación sigue las mejores prácticas de desarrollo web moderno, utilizando tecnologías robustas como Next.js 14, TypeScript y TailwindCSS, asegurando un código mantenible y escalable para el futuro.
 
+
+

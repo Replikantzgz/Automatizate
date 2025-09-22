@@ -148,3 +148,5 @@ COMMENT ON COLUMN contracts.start_date IS 'Fecha de inicio del contrato';
 COMMENT ON COLUMN contracts.status IS 'Estado del contrato: active, completed, disputed';
 COMMENT ON COLUMN contracts.completed_at IS 'Fecha de finalización del contrato';
 
+
+

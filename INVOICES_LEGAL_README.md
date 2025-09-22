@@ -375,3 +375,5 @@ CREATE POLICY "Only system can create invoices" ON invoices
 
 **Nota**: Este sistema cumple con los requisitos legales españoles y europeos (GDPR) para el manejo de datos personales y la generación de facturas electrónicas.
 
+
+

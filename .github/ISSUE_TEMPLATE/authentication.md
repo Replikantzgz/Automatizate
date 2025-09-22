@@ -291,3 +291,5 @@ export function middleware(request: NextRequest) {
 - **Authentication Best Practices**: https://owasp.org/www-project-top-ten/
 - **Security Guidelines**: https://supabase.com/docs/guides/security
 
+
+

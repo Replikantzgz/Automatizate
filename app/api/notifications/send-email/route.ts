@@ -6,8 +6,17 @@ import { NotificationType } from '@/lib/supabase'
 const RESEND_API_KEY = process.env.RESEND_API_KEY
 const FROM_EMAIL = process.env.FROM_EMAIL || 'noreply@automarket.com'
 
+// Tipo para el resultado de envío de email
+type EmailResult = {
+  success: true;
+  data: any;
+} | {
+  success: false;
+  error: string;
+}
+
 // Función para enviar email usando Resend
-async function sendEmailWithResend(to: string, subject: string, html: string) {
+async function sendEmailWithResend(to: string, subject: string, html: string): Promise<EmailResult> {
   if (!RESEND_API_KEY) {
     console.warn('RESEND_API_KEY no configurada, saltando envío de email')
     return { success: false, error: 'API key no configurada' }
@@ -42,7 +51,7 @@ async function sendEmailWithResend(to: string, subject: string, html: string) {
 }
 
 // Función para enviar email usando SendGrid (alternativa)
-async function sendEmailWithSendGrid(to: string, subject: string, html: string) {
+async function sendEmailWithSendGrid(to: string, subject: string, html: string): Promise<EmailResult> {
   const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY
   
   if (!SENDGRID_API_KEY) {
@@ -70,7 +79,7 @@ async function sendEmailWithSendGrid(to: string, subject: string, html: string) 
       throw new Error(`SendGrid API error: ${response.status} - ${error}`)
     }
 
-    return { success: true }
+    return { success: true, data: { message: 'Email sent successfully' } }
   } catch (error) {
     console.error('Error sending email with SendGrid:', error)
     return { success: false, error: error instanceof Error ? error.message : 'Unknown error' }
@@ -241,4 +250,6 @@ function getNotificationSubject(type: NotificationType): string {
       return 'Nueva notificación'
   }
 }
+
+
 

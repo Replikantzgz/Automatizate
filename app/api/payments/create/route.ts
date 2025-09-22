@@ -90,7 +90,7 @@ export async function POST(request: NextRequest) {
         expert_amount: breakdown.expertAmount,
         currency: 'eur',
         status: 'pending',
-        stripe_payment_intent_id: paymentIntentResult.paymentIntent.id,
+        stripe_payment_intent_id: paymentIntentResult.paymentIntent?.id || '',
       })
       .select()
       .single()
@@ -103,7 +103,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       success: true,
       payment,
-      client_secret: paymentIntentResult.paymentIntent.client_secret,
+      client_secret: paymentIntentResult.paymentIntent?.client_secret || '',
     })
 
   } catch (error) {

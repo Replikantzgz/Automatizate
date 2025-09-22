@@ -199,3 +199,5 @@ export default function ProposalCard({ proposal, user, onStatusUpdate }: Proposa
   )
 }
 
+
+

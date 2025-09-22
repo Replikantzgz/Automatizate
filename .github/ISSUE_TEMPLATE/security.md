@@ -205,3 +205,5 @@ const safeContent = DOMPurify.sanitize(userContent);
 
 **Recuerda: Para vulnerabilidades de seguridad, envía un email privado, NO abras issues públicos.**
 
+
+

@@ -200,3 +200,5 @@ const safeContent = DOMPurify.sanitize(userContent);
 - **Responsable**: [INSERTAR_NOMBRE_RESPONSABLE]
 - **Horario**: Respuesta en 24-48 horas
 
+
+

@@ -317,7 +317,7 @@ export class InvoiceService {
 
   private static async generatePDF(html: string): Promise<Buffer> {
     const browser = await puppeteer.launch({
-      headless: 'new',
+      headless: true,
       args: ['--no-sandbox', '--disable-setuid-sandbox']
     })
     
@@ -336,7 +336,7 @@ export class InvoiceService {
         }
       })
       
-      return pdfBuffer
+      return Buffer.from(pdfBuffer)
     } finally {
       await browser.close()
     }
@@ -365,4 +365,6 @@ export class InvoiceService {
     return data || []
   }
 }
+
+
 

@@ -119,7 +119,7 @@ export default function ReportesPage() {
       }, 0) || 0
 
       const projectsThisMonth = projectsData?.length || 0
-      const proposalConversionRate = totalProposals > 0 ? (totalContracts / totalProposals) * 100 : 0
+      const proposalConversionRate = (totalProposals && totalProposals > 0 && totalContracts) ? (totalContracts / totalProposals) * 100 : 0
       const averageProjectValue = projectsData && projectsData.length > 0 
         ? projectsData.reduce((sum, project) => sum + (project.budget || 0), 0) / projectsData.length
         : 0
@@ -159,8 +159,8 @@ export default function ReportesPage() {
       datasets: [{
         label: 'Proyectos',
         data: monthlyData,
-        backgroundColor: 'rgba(59, 130, 246, 0.2)',
-        borderColor: 'rgba(59, 130, 246, 1)',
+        backgroundColor: ['rgba(59, 130, 246, 0.2)'],
+        borderColor: ['rgba(59, 130, 246, 1)'],
         borderWidth: 2
       }]
     }
@@ -447,4 +447,6 @@ export default function ReportesPage() {
     </div>
   )
 }
+
+
 

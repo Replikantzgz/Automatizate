@@ -93,3 +93,5 @@ COMMENT ON COLUMN payments.stripe_payment_intent_id IS 'ID del Payment Intent de
 COMMENT ON COLUMN payments.stripe_transfer_id IS 'ID de la transferencia de Stripe al experto';
 COMMENT ON COLUMN payments.released_at IS 'Fecha cuando se liberó el pago al experto';
 
+
+

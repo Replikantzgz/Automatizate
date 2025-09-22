@@ -269,3 +269,5 @@ Este sistema implementa un flujo completo de propuestas para conectar clientes c
 - **Errores** en creación/actualización
 - **Performance** de consultas a base de datos
 
+
+

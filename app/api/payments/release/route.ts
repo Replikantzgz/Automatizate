@@ -87,7 +87,7 @@ export async function POST(request: NextRequest) {
       .from('payments')
       .update({ 
         status: 'released',
-        stripe_transfer_id: transferResult.transfer.id,
+        stripe_transfer_id: transferResult.transfer?.id || '',
         released_at: new Date().toISOString(),
         updated_at: new Date().toISOString()
       })

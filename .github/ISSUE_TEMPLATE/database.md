@@ -261,3 +261,5 @@ CREATE TABLE projects (
 - **RLS Policies**: https://supabase.com/docs/guides/auth/row-level-security
 - **Performance**: https://supabase.com/docs/guides/database/performance
 
+
+

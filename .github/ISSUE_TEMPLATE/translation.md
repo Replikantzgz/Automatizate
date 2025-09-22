@@ -122,3 +122,5 @@ Si tienes preguntas sobre la implementación técnica o quieres coordinar la tra
 - **Email**: [email de contacto]
 - **Issues**: Crea un issue con la etiqueta `translation`
 
+
+
